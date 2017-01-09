@@ -1,7 +1,6 @@
 --start
 wifi.setmode(wifi.STATION)
-wifi.sta.config("osb_8",
-"s5a4r3a2y1",false)
+wifi.sta.config("SSID","password",false)
 -- oto conn kapalı
 wifi.sta.autoconnect(0)
 -- 
