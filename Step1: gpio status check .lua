@@ -15,3 +15,5 @@ print(gpio.read(13))
 print(gpio.read(14))
 print(gpio.read(15))
 print(gpio.read(16))
+--gpio index
+--http://nodemcu.readthedocs.io/en/master/en/modules/gpio/#gpioserout
