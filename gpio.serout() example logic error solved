@@ -14,3 +14,6 @@ gpio.serout(1,1,{5000,995000},100, function() print("done") end) -- asynchronous
 gpio.serout(1,1,{5000,995000},100, 1) -- asynchronous 100 flashes 5 ms long, no callback // nodemcu
 
 --NOTE:Nodemcu(geekcreit) can not do 100 flashes 5ms long in every second! So It restars itself! nMCU can max 2 flashes (5ms) in a sec.
+--corrected version
+gpio.serout(1,1,{5000,995000},2, function() print("done") end) -- asynchronous max 2 flashes 5 ms long every second with a callback function when done
+gpio.serout(1,1,{5000,995000},2, 1) -- asynchronous max 2 flashes 5 ms long, no callback // nodemcu
