@@ -6,7 +6,7 @@ local i = 1
       i = i + 1
     end
     
---Lets try with using our D0-pin0-GPIO16 
+--Lets try it using our D0-pin0-GPIO16 with.
 --infinite loop
 
 gpio.mode(0, gpio.OUTPUT)
