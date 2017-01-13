@@ -1,4 +1,4 @@
-tmr.delay()
+tmr.delay()--1000000usec = 1sec So, try this for 1sec => tmr.delay(1000000)
 --use this module to delay
 --http://nodemcu.readthedocs.io/en/master/en/modules/tmr/
 --For the asynchronous version, the minimum delay time should not be shorter than 50 μs and
