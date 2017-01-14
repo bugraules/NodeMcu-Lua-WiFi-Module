@@ -1,3 +1,0 @@
-
-print(wifi.sta.getip()) -- print current IP address, netmask, gateway
-print(wifi.sta.getmac()) --print mac adress
