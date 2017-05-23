@@ -1,6 +1,6 @@
-while true do
-   gpio.write(0, gpio.HIGH)
-   tmr.delay(500000)--1 second =1000000 u second ==> 1Hz
+while true do -- continuous command
+   gpio.write(0, gpio.HIGH) -- made D0(pin1) high voltage 3v3/5v
+   tmr.delay(500000) -- 0,5 second delay -- 1 second =1000000 u second ==> 1Hz
    gpio.write(0, gpio.LOW)
    tmr.delay(500000)
 end
