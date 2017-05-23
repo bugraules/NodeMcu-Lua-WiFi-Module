@@ -1,4 +1,4 @@
-print(gpio.read(0))--io index 16
+print(gpio.read(0))--io index 16--D0 (blue led)
 print(gpio.read(1))--io index 10
 print(gpio.read(2))--io index 4
 print(gpio.read(3))--io index 9
