@@ -1,0 +1,8 @@
+gpio.mode(0, gpio.OUTPUT)--
+
+while true do
+   gpio.write(0, gpio.HIGH)
+   tmr.delay(500000)--1 second =1000000 u second ==> 1Hz
+   gpio.write(0, gpio.LOW)
+   tmr.delay(500000)
+end
