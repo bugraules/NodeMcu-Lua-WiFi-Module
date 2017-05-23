@@ -1,4 +1,4 @@
-gpio.mode(0, gpio.OUTPUT)--
+
 
 while true do
    gpio.write(0, gpio.HIGH)
