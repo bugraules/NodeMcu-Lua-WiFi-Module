@@ -1,0 +1,31 @@
+--One Master and One Slave Geekcreit NodemcuESP8266
+--Referance web site https://nodemcu.readthedocs.io/en/master/en/modules/spi/#spisetup
+
+--SPI.SETUP syntax and parameters
+--SPI interface allows to transmit and receive data simultaneously on two lines (MOSI and MISO).
+--Clock polarity (CPOL) and clock phase (CPHA) are the main parameters that define a clock format to be used by the SPI bus. 
+--Depending on CPOL parameter, SPI clock may be inverted or non-inverted. CPHA parameter is used to shift the sampling phase. 
+--If CPHA=0 the data are sampled on the leading (first) clock edge. 
+--If CPHA=1 the data are sampled on the trailing (second) clock edge, regardless of whether that clock edge is rising or falling.
+--You can find the sample of SPI signal combines as jpeg here
+
+--spi.setup(id, mode, cpol, cpha, databits, clock_div[, duplex_mode])
+--id SPI ID number: 0 for SPI, 1 for HSPI
+--mode select master or slave mode
+--    spi.MASTER
+--    spi.SLAVE - not supported currently
+--cpol clock polarity selection
+--    spi.CPOL_LOW
+--    spi.CPOL_HIGH
+--cpha clock phase selection
+--    spi.CPHA_LOW
+--    spi.CPHA_HIGH
+--databits number of bits per data item 1 - 32
+--clock_div SPI clock divider, f(SPI) = 80 MHz / clock_div, 1 .. n (0 defaults to divider 8)
+--duplex_mode duplex mode
+--    spi.HALFDUPLEX (default when omitted)
+--    spi.FULLDUPLEX
+
+--SYNTAX (example)
+--Master
+spi.setup(0, spi.MASTER, spi.CPOL_LOW, cpha, databits, clock_div[, duplex_mode])
