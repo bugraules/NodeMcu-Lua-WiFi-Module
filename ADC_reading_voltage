@@ -1,0 +1,5 @@
+while true do -- contiinuous loop
+adc.read(0) -- read A0 pin command
+print(adc.read(0)) -- print readed value
+tmr.delay(500000) -- read interval/delay 
+end
