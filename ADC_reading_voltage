@@ -1,5 +1,6 @@
 while true do -- contiinuous loop
-adc.read(0) -- read A0 pin command
-print(adc.read(0)) -- print readed value
+val = adc.read(0) -- read A0 pin command
+val2 = (val*(33/10))1024 -- maximum bit value is 1024 means 3v3
+print(val2) -- print readed value
 tmr.delay(500000) -- read interval/delay 
 end
