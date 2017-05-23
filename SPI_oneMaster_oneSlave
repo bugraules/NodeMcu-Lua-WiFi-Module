@@ -28,4 +28,6 @@
 
 --SYNTAX (example)
 --Master
-spi.setup(0, spi.MASTER, spi.CPOL_LOW, cpha, databits, clock_div[, duplex_mode])
+spi.setup(0, spi.MASTER, spi.CPOL_LOW, cspi.CPHA_LOW, 8, 8)
+
+
